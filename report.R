@@ -1,7 +1,7 @@
 #Summarize_DMEF 
 
-setwd("C:\\work\\DMEF04")
-DMEF <- read.csv("DMEF04.csv", head = T, sep = ",",stringsAsFactors = F)
+setwd("C:\\work\\DMEF_Academic_Data_set_four")
+DMEF <- read.csv("DMEF_Academic_Data_set_four.csv", head = T, sep = ",",stringsAsFactors = F)
 
 
 
@@ -44,7 +44,7 @@ par(opar)
 
 
 DMEF$custype1[DMEF$date2 == 0] <- 0
-DMEF$custype1[DMEF$date2 >  0] <- 1               #dummy£¬0 - Purchase only once, 1 - Purchase more than once
+DMEF$custype1[DMEF$date2 >  0] <- 1               #dummyÂ£Â¬0 - Purchase only once, 1 - Purchase more than once
 
 
 #The most recent purchase interval, recorded as date3
